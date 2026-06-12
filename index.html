@@ -23,7 +23,7 @@
     <nav class="navigation">
         <!--logo-->
         <a href="#" class="logo">
-            <img src="images/logo.png"/>
+            <img src="images/logo.png" alt="Logo">
         </a>
         <!--menu-btn-->
         <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -38,6 +38,8 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <!--theme-toggle-->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
         <!--hire-me-btn-->
         <a href="#" class="hire-me">
             Hire Me Today
@@ -207,28 +209,30 @@
 
     <!--footer--------------------------------------->
     <footer>
-        <!--copyright-->
-        <span class="copyright">Copyright 2021 - Eric's Design</span>
-        <!--footer-social-links-->
-        <div class="footer-social">
-            <!--facebook-->
-            <a href="#">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <!--linked-in-->
-            <a href="https://www.linkedin.com/in/eric-miulli/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <!--github-->
-            <a href="https://github.com/EricMiulli" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+        <div class="footer-inner">
+            <div class="footer-legal">
+                <span class="copyright">© 2026 Eric Miulli. All rights reserved.</span>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/eric-miulli/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/EricMiulli" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </footer>
     
     <!--script-->
-    <script>
-        AOS.init();
-      </script>
+        <script>
+                AOS.init();
+            </script>
+        <script src="js/darkmode.js"></script>
 </body>
 </html>
